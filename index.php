@@ -21,23 +21,26 @@
 </head>
 <body>
     <main>
-    <!-- Navegación -->
-    <nav>
-		<ul>
-			<li class="nav-title"><span><img src="imagenes/streamscape.png" alt="Logo"></span>Streamscape </li>
-			<li><a href="index.php">| Inicio</a></li>
-		</ul>
-	</nav>
+    <div class="header">
+                
+			<a href="" class="logo">
+                <span><img src="imagenes/streamscape.png" alt="Logo"></span>Streamscape 
+            </a>
+        <div class="header-right" >
+            <a href="index.php" >Inicio</a>
+            <a href="../index.php" >Contacto</a>
+        </div>
+     </div>
     <!-- Banner -->
-        <section class="banner">
+    <section class="banner">
             <div class="banner-img">
             </div>
-        </section>
+    </section>
     <section class="container-intro">
         <div class="container-intro-title">
             <h2 >Streamscape</h2>
         </div>
-        
+
         <div class="container-intro-info">
             <p>
                 <strong>¡Bienvenid@ </strong> a nuestra plataforma de entretenimiento! 
@@ -116,7 +119,7 @@
             </div>
             </form>
         </div>
-</section>
+    </section>
     <section class="container-pie">
         <div id="pie">
             <p class="parrafopie">Copyright 2023. All Right Reserved <br /> 

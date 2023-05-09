@@ -15,10 +15,7 @@
 </head>
 <body>
     <main>
-    <!-- Navegación -->
-    <!-- <nav> -->
         <div class="header">
-            <!-- <li class="nav-menu"> -->
                 <div class="boton-menu">
                     <a>
                         <label for="btn-menu" class="icon-menu" ><img src="../imagenes/menu_icon1.png" alt="menu-icon" class="icon-menu"></label>
@@ -27,7 +24,6 @@
 			<a href="" class="logo">
                 <span><img src="../imagenes/streamscape.png" alt="Logo"></span>Streamscape 
             </a>
-			<!-- <li class="nav-title"><span><img src="../imagenes/streamscape.png" alt="Logo"></span>Streamscape </li> -->
         <div class="header-right" >
             <a href="menu_principal.php" >Menú Principal</a>
             <a href="../index.php" >Contacto</a>
@@ -35,13 +31,6 @@
         </div>
      </div>
      
-      
-            <!-- <a href="">Plataformas</a>
-                <a href="">Series</a>
-                    <a href="">Usuarios</a>
-                    <a href="">Busqueda Personalizada</a>
-                    <a href="../index.php">Cerrar sesión</a> -->
-
         <div class="container-menu">
             <div class="cont-menu" >
                 <nav>
@@ -80,8 +69,9 @@
                 <label for="btn-menu" class="icon-cerrar"><img src="../imagenes/cerrar_icon1.png" alt=""></label>
             </div>
         </div>
-	<!-- </nav> -->
     <input type="checkbox" id="btn-menu" class="check-menu">
+
+    
     <!-- Banner -->
     <section class="banner">
             <div class="banner-img">
@@ -112,7 +102,6 @@
     </section>
     </main>
 </body>
-
 
 <script>
      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
