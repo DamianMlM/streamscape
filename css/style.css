@@ -1,0 +1,408 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px; 
+    padding: 0%;
+}
+:root{
+    /* colors */
+    --nav-cont : rgb(208, 208, 208);
+    --nav-background : rgb(0, 96, 134);
+    --nav-cont-hover:rgb(255, 255, 255) ;
+    --black-text: black;
+    --button-general-border:  #36b7c5;
+    --white--general: white;
+    --backgraund-pie: #ddf2fd;
+    --container-title-hover:rgb(239, 239, 239) ;
+}
+body{
+    max-width: 3000px;
+    /* max-height: max-content; */
+}
+
+main{
+    max-width: 100%;
+    min-width: 300px;
+    margin: auto;
+    display: grid;
+}
+/* NAVEGACION */
+nav{
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: -6px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color:var(--nav-background);
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--nav-cont);
+    font-size: 20px;
+    text-decoration: none;
+} 
+nav a:hover {
+    color: var(--nav-cont-hover);
+}
+nav img{
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    padding-right: 5px;
+}
+.nav-title{
+    color: var(--nav-cont);
+    margin-right: auto;
+    margin-left: 0;
+    padding: 10px 15px;
+    font-size: 25px;
+    text-decoration: none;
+    width: auto;
+    float: left;
+}
+.nav-title:hover {
+    color: var(--nav-cont-hover);
+
+}
+
+.banner-img{ 
+    max-width: 80%;
+    min-width: 250px;
+    margin: auto;
+    text-align: center;
+    height: 600px;
+    background-image: url("../imagenes/banner.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+}
+
+
+.container-intro{
+    background-color:var(--white--general);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 80%;
+    min-width: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(250px, 500px);
+    justify-content: center;
+    align-content: center;
+    
+}
+.container-intro-title h2{
+    padding: 10px 10px 10px 10px;
+    align-self: center;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto; 
+}
+.container-intro-info p{
+    padding: 10px 10px 10px 10px;
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 1rem;
+}
+.container-intro-title h2:hover{
+    background-color: var(--container-title-hover); 
+}
+.container-intro-info p:hover{
+    background-color: var(--container-title-hover); 
+    
+}
+.container-intro-info-button{
+    margin: 0 auto;
+}
+
+
+
+/* BOTONES */
+.botton-login {
+    /* padding: 10px 10px 10px 10px; */
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--white--general);
+    color: var(--black-text);
+    border: 3px solid var(--button-general-border); /* Green */
+    /* margin: 15px; */
+}    
+.botton-login:hover{
+    background-color: #005d81;
+    color:var(--white--general);
+}
+
+/* pie página*/
+#pie{
+    clear: both;
+    width: 100%;
+    height: auto;
+    background-color:var(--nav-background);
+    margin: auto;
+    
+}
+.parrafopie{
+    text-align: center;
+    align-content: center;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    padding-top: 10px;
+    color: var(--nav-cont);
+}
+
+/* The Modal LOGIN (background) */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn1 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn1 {
+       width: 100%;
+    }
+  }
+
+
+  /* MODAL SING UP */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f51000;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+
+
+@media screen and (max-width: 1200px) {
+    nav li {
+        float: none;
+    }
+    nav li a {
+        display: block;
+        text-align: left;
+    }
+    .banner-img{ 
+        width: 80%;
+        height: 400px;
+        background-image: url("../imagenes/banner4.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position-x: center;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    nav li {
+        float: none;
+    }
+    nav li a {
+        display: block;
+        text-align: left;
+    }
+    .banner-img{ 
+        width: 80%;
+        height: 200px;
+        background-image: url("../imagenes/banner3.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position-x: center;
+    }
+    .container-intro{
+        min-width: 250px;
+        height: auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 500px);
+    }
+    .container-intro-title h2{
+        align-self: center;
+        min-width: 280px;
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+
+
+
+
