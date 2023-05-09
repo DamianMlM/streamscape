@@ -1,5 +1,5 @@
 /* ESTILOS MENÚ DESPLEGABLE */
-.nav-menu{
+/* .nav-menu{
     color: var(--nav-cont);
     margin-right: auto;
     margin-right: 5px;
@@ -52,4 +52,4 @@
 
 } 
 
-}
+} */

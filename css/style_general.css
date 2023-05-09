@@ -142,10 +142,10 @@ nav img{
   border-left: 5px solid transparent;
   transition: all 400ms ease;
 }
-.cont-menu nav a:hover{
+/* .cont-menu nav a:hover{
   border-left: 5px solid #ddf2fd;
-  background: rgb(28, 27, 27);
-}
+  background: rgb(5, 58, 74);
+} */
 .cont-menu label{
   position: absolute;
   right: 5px;
@@ -154,7 +154,110 @@ nav img{
 }
 /* Fin menu lateral */
 
+/* Menu lateral opciones desplegables */
 
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  /* overflow-x: hidden; */
+  padding-top: 15px;
+  margin-top: 25px;
+  /* max-width: 0px; */
+  background-color: var(--black-text);
+  /* height: 100vh; */
+  /* position: relative; */
+
+}
+/* PEGADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.sidenav a button{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: var(--nav-cont);
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.sidenav label{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* PEGADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:var(--nav-cont);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  border-left: 5px solid #e7f0f5;
+  /* color: var(--nav-cont-hover); */
+  /* color: black; */
+}
+.sidenav a:hover{
+  width: 90.2%;
+  background-color:#575757;
+  /* color: black; */
+}
+
+/* Main content */
+.main {
+  /* margin-left: 200px;  */
+  /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(10, 58, 85);
+  color: var(--white--general);
+}
+
+.active a:hover, .dropdown-btn:hover {
+  background-color: var(--white--general);
+  color:  rgb(10, 58, 85);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:rgb(22, 22, 22);
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Fin menu lateral opciones desplegables */
 
 .banner-img{ 
     max-width: 80%;
