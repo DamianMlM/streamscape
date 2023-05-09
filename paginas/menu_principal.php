@@ -16,21 +16,28 @@
 <body>
     <main>
     <!-- Navegación -->
-    <nav>
-		<ul>
-			<li class="nav-title"><span><img src="../imagenes/streamscape.png" alt="Logo"></span>Streamscape </li>
-			<li><a href="menu_principal.php" >| Menú Principal</a></li>
-			<li><a href="../index.php" >| Contacto</a></li>
-			<li><a href="recomendaciones.php">| Recomendaciones</a></li>
-			
-            <li class="nav-menu">
+    <!-- <nav> -->
+        <div class="header">
+            <!-- <li class="nav-menu"> -->
                 <div class="boton-menu">
-                    <label for="btn-menu" class="icon-menu" ><img src="../imagenes/menu_icon1.png" alt="menu-icon" class="icon-menu"></label>
+                    <a>
+                        <label for="btn-menu" class="icon-menu" ><img src="../imagenes/menu_icon1.png" alt="menu-icon" class="icon-menu"></label>
+                    </a>
                 </div>
-            </li>
-        </ul> 
-                <!-- <a href="">Plataformas</a>
-                    <a href="">Series</a>
+			<a href="" class="logo">
+                <span><img src="../imagenes/streamscape.png" alt="Logo"></span>Streamscape 
+            </a>
+			<!-- <li class="nav-title"><span><img src="../imagenes/streamscape.png" alt="Logo"></span>Streamscape </li> -->
+        <div class="header-right" >
+            <a href="menu_principal.php" >Menú Principal</a>
+            <a href="../index.php" >Contacto</a>
+            <a href="recomendaciones.php">Recomendaciones</a>
+        </div>
+     </div>
+     
+      
+            <!-- <a href="">Plataformas</a>
+                <a href="">Series</a>
                     <a href="">Usuarios</a>
                     <a href="">Busqueda Personalizada</a>
                     <a href="../index.php">Cerrar sesión</a> -->
@@ -67,13 +74,13 @@
                             <a href="#">Vista general</a>
                         </div>
                         <a href="#contact">Busqueda Personalizada</a>
-                        <a href="#contact">Cerrar sesión</a>
+                        <a href="../index.php">Cerrar sesión</a>
                     </div>
                 </nav>
                 <label for="btn-menu" class="icon-cerrar"><img src="../imagenes/cerrar_icon1.png" alt=""></label>
             </div>
         </div>
-	</nav>
+	<!-- </nav> -->
     <input type="checkbox" id="btn-menu" class="check-menu">
     <!-- Banner -->
     <section class="banner">
