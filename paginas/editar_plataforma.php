@@ -115,10 +115,11 @@
                     <input type="text" name="name_plataforma" id="name_plataforma" size="40" maxlength="50"
                     value="<?php echo $row['nombre']; ?>" />
 
+<!--                     
                     <label for="url_plataforma"> URL de la plataforma:</label>
                     <input type="text" name="url_plataforma" id="url_plataforma" size="45" maxlength="100"
                     value="<?php echo $row['url']; ?>">   
-                    
+                     -->
                     <label for="titulos_plataforma"> Número de titulos: </label>
                     <input type="text" name="titulos_plataforma" id="titulos_plataforma" size="15" maxlength="7"
                     value="<?php echo $row['total_titulos']; ?>">   

@@ -54,7 +54,7 @@
             <label> <?php echo $mensaje ?> </label>
                     
             <label> <strong>  Nombre de la plataforma:  </strong> <?php echo $nombre_plataforma ?></label>
-            <label> <strong> URL de la plataforma:</strong> <?php echo $url_plataforma?></label>
+            <!-- <label> <strong> URL de la plataforma:</strong> <?php echo $url_plataforma?></label> -->
             <label> <strong> Cantidad de titulos de la plataforma:</strong> <?php echo $no_titulos?></label><br>
             <label> <strong> Tipo de suscripcion:</strong>  <?php echo $tipo_suscripcion?></label>
             
