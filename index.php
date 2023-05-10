@@ -57,7 +57,7 @@
             <!-- Button to open the modal login form -->
                 <button class="botton-login" onclick="document.getElementById('id01').style.display='block'">Iniciar Sesión</button>
             <!-- Button to open the modal login form -->
-                <button class="botton-login" onclick="document.getElementById('id02').style.display='block'">Registrarse</button>
+                <!-- <button class="botton-login" onclick="document.getElementById('id02').style.display='block'">Registrarse</button> -->
         </div>
         <!-- The Modal -->
         <div id="id01" class="modal">
