@@ -23,8 +23,8 @@
                </button>
                <div class="dropdown-container">
                    <a href="../paginas/alta_tabla1.php">Crear</a>
-                   <a href="../paginas/eliminar_plataforma.php">Eliminar</a>
-                   <a href="../paginas/editar_plataforma.php">Editar</a>
+                   <a href="../paginas/reporte_general_plataforma.php">Eliminar</a>
+                   <a href="../paginas/reporte_general_plataforma.php">Editar</a>
                    <a href="../paginas/reporte_general_plataforma.php">Vista general</a>
                </div>
                <button class="dropdown-btn">Series 

@@ -39,8 +39,8 @@
                 <div class="dropdown-content">
                 <a href="./reporte_general_plataforma.php">Consultar</a>
                 <a href="./alta_tabla1.php">Nueva Plataforma</a>
-                <a href="./editar_plataforma.php">Editar plataforma</a>
-                <a href="./eliminar_plataforma.php">Eliminar plataforma</a>
+                <a href="./reporte_general_plataforma.php">Editar plataforma</a>
+                <a href="./reporte_general_plataforma.php">Eliminar plataforma</a>
                 </div>
             </div>
         </div>
