@@ -9,8 +9,8 @@
    </a>
 <div class="header-right" >
    <a href="menu_principal.php" >Menú Principal</a>
-   <a href="#" >Contacto</a>
-   <a href="#">Recomendaciones</a>
+   <a href="" >Contacto</a>
+   <a href="">Recomendaciones</a>
 </div>
 </div>
 

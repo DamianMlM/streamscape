@@ -25,8 +25,8 @@
 	   $_SESSION["validado"]="true";
 	    
 	   //Redireccionamos a una de las páginas del sistema en linea
-	   $conn = null;
        header("Location: ../paginas/menu_principal.php");
+	   $conn = null;
 	   //Cerramos la oonexion a la base de datos ***
 	   exit;
     } else {

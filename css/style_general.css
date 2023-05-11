@@ -103,6 +103,7 @@ main{
 }
 .boton-menu label{
   cursor: pointer;
+  
 }
 /* Menu lateral */
 .check-menu{
@@ -347,7 +348,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 /* FORMS RESPONSIVEEEEEEEEEEEEEEEEEEEEEEEEE */
 
-input[type=text], select, textarea {
+.container-intro input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -355,12 +356,12 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-label {
+.container-intro label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
-input[type=submit] {
+.container-intro input[type=submit] {
   background-color: #1a426d;
   color: white;
   padding: 12px 20px;
@@ -370,7 +371,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+.container-intro input[type=submit]:hover {
   background-color: #4575a0;
 }
 

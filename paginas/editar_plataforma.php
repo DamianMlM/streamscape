@@ -1,5 +1,14 @@
 <?php
-  require_once "../php/proteccion.php";
+  session_start();
+  //Verificamos que la variable de SESION tenga datos validos
+  //Si los trae, dejamos visualizar esta página, de lo contrario
+  //lo regresamos a la página de firma de usuarios (LOGIN)
+  if(!isset($_SESSION["validado"]) || $_SESSION["validado"] !== "true")
+  {
+     //Redireccionamos a la página de firma de usuarios (LOGIN)
+     header("Location: ../index.php");
+     exit;
+  }
   require_once "../php/bd.php";
   // Recuperamos los valores de los objetos de QUERYSTRING que viene desde la URL mediante GET ******
 	$idPlataforma = $_GET["idPlataforma"];
@@ -96,7 +105,7 @@
         </div>
         
         <div class="container-intro-info">
-             <form action="grabar_plataformas.php" method="post" id="formulario_plataforma"  onsubmit="return validaForm()"  >
+             <form action="actualizar_plataforma.php" method="post" id="formulario_plataforma"  onsubmit="return validaForm()"  >
                 <div>
                 <?php
                     foreach ($rows as $row) {
@@ -113,13 +122,13 @@
 
                     <label for="name_plataforma">Nombre de la plataforma:</label>
                     <input type="text" name="name_plataforma" id="name_plataforma" size="40" maxlength="50"
-                    value="<?php echo $row['nombre']; ?>" />
+                    value="<?php echo $row['nombre']; ?>" /> <br />
 
-<!--                     
+                    
                     <label for="url_plataforma"> URL de la plataforma:</label>
                     <input type="text" name="url_plataforma" id="url_plataforma" size="45" maxlength="100"
                     value="<?php echo $row['url']; ?>">   
-                     -->
+                    
                     <label for="titulos_plataforma"> Número de titulos: </label>
                     <input type="text" name="titulos_plataforma" id="titulos_plataforma" size="15" maxlength="7"
                     value="<?php echo $row['total_titulos']; ?>">   

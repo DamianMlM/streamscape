@@ -1,5 +1,15 @@
 <?php
-  require_once "../php/proteccion.php";
+    //Inicializamos el uso de las sesiones ***********************
+    session_start();
+    //Verificamos que la variable de SESION tenga datos validos
+    //Si los trae, dejamos visualizar esta página, de lo contrario
+    //lo regresamos a la página de firma de usuarios (LOGIN)
+    if(!isset($_SESSION["validado"]) || $_SESSION["validado"] !== "true")
+    {
+        //Redireccionamos a la página de firma de usuarios (LOGIN)
+        header("Location: ../index.php");
+        exit;
+    }
   //Insertamos el código PHP donde nos conectamos a la base de datos *******************************
        
   require_once "../php/bd.php";

@@ -1,5 +1,14 @@
 <?php
-  require_once "../php/proteccion.php";
+  session_start();
+  //Verificamos que la variable de SESION tenga datos validos
+  //Si los trae, dejamos visualizar esta página, de lo contrario
+  //lo regresamos a la página de firma de usuarios (LOGIN)
+  if(!isset($_SESSION["validado"]) || $_SESSION["validado"] !== "true")
+  {
+     //Redireccionamos a la página de firma de usuarios (LOGIN)
+     header("Location: ../index.php");
+     exit;
+  }
   require_once "../php/bd.php";
   $result;
     // Escribimos la consulta para recuperar los registros de la tabla de MySQL

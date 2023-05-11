@@ -1,5 +1,14 @@
 <?php
-  require_once "../php/proteccion.php";
+  session_start();
+  //Verificamos que la variable de SESION tenga datos validos
+  //Si los trae, dejamos visualizar esta página, de lo contrario
+  //lo regresamos a la página de firma de usuarios (LOGIN)
+  if(!isset($_SESSION["validado"]) || $_SESSION["validado"] !== "true")
+  {
+     //Redireccionamos a la página de firma de usuarios (LOGIN)
+     header("Location: ../index.php");
+     exit;
+  }
   require_once "../php/bd.php";
 //Recuperamos los valores de las cajas de texto y de los demás objetos de formulario
 	//Como los valores vienen desde un FORMULARIO web, se debe usar la supervariable de PHP -- $_POST[ ];
@@ -18,7 +27,16 @@
 	// mediante la propiedad "EXEC" de la linea de conexión ***************************
 	
         $conn->exec($sqlUPDATE);
-	    $mensaje = "PLATAFORMA ACTUALIZADO SATISFACTORIAMENTE";
+	    $mensaje = "PLATAFORMA ACTUALIZADA SATISFACTORIAMENTE";
+
+        
+        if ($tipo_suscripcion == "1"){
+            $tipo_suscripcion = "Gratis";
+        } else if ($tipo_suscripcion == "2"){
+            $tipo_suscripcion = "Paga";
+        }else{
+            $tipo_suscripcion = "";
+        }
 
 ?>
 <!DOCTYPE html>
@@ -54,7 +72,7 @@
             <label> <?php echo $mensaje ?> </label>
                     
             <label> <strong>  Nombre de la plataforma:  </strong> <?php echo $nombre_plataforma ?></label>
-            <!-- <label> <strong> URL de la plataforma:</strong> <?php echo $url_plataforma?></label> -->
+            <label> <strong> URL de la plataforma:</strong> <?php echo $url_plataforma?></label>
             <label> <strong> Cantidad de titulos de la plataforma:</strong> <?php echo $no_titulos?></label><br>
             <label> <strong> Tipo de suscripcion:</strong>  <?php echo $tipo_suscripcion?></label>
             
