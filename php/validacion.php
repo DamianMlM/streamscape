@@ -5,12 +5,12 @@
 	
 	//Recuperamos los valores de las cajas de texto y de los demás objetos de formulario
     $Vclave = trim($_POST["password"]);
-	$Vclave = (int)$Vclave;
-	$Vusuario = trim($_POST["usuario"]);
+	$Vclave = md5($Vclave);
+	$Vcorreo_usuario = trim($_POST["correo_usuario"]);
 
 	
     // Escribimos la consulta para recuperar el UNICO usuario que se firmo en el LOGIN
-    $sqlLOGIN = "SELECT * FROM usuarios WHERE usuario='$Vusuario' AND clave=$Vclave";
+    $sqlLOGIN = "SELECT * FROM usuarios WHERE correo='$Vcorreo_usuario' AND clave='$Vclave'";
     // Ejecutamos la consulta y asignamos el resultado a la variable llamada $result
     $result = $conn->query($sqlLOGIN);
     // Recuperamos los valores o registros de la variable $result y los asignamos a la variable $rows

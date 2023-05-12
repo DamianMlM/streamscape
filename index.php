@@ -16,8 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamscape</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/valida_login.js"></script>
     <link rel="icon" href="imagenes/streamscape_icono.png" type="image/x-icon">
+    <script src="javascript/valida_login.js"></script>
+
 </head>
 <body>
     <main>
@@ -59,32 +60,36 @@
             <!-- Button to open the modal login form -->
                 <!-- <button class="botton-login" onclick="document.getElementById('id02').style.display='block'">Registrarse</button> -->
         </div>
+        
         <!-- The Modal -->
         <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none' "class="close" title="Close Modal">&times;</span>
-
-        <!-- Modal Content -->
-        <form class="modal-content animate" method="post" action="php/validacion.php" onSubmit="return validaLogin()" >
+            <span onclick="document.getElementById('id01').style.display='none' "class="close" title="Close Modal">&times;</span>
+            
+            <!-- Modal Content -->
+            <!-- <form class="modal-content animate" method="post" onsubmit="return validaLogin()"> -->
+            <form class="modal-content animate" method="post" action="php/validacion.php" onsubmit="return validaLogin()">
             <div class="imgcontainer">
             <img src="imagenes/img_avatar2.png" alt="Avatar" class="avatar">    
             </div>
 
             <div class="container">
-            <label for="usuario"><b>Username</b></label>
-            <input type="text"  name="usuario" id="usuario" placeholder="Enter Username"  >
+            <label for="correo_usuario"><b>Correo:</b></label>
+            <input type="email" name="correo_usuario" id="correo_usuario" placeholder="example@correo.com"  >
 
-            <label for="password"><b>Password</b></label>
-            <input type="password" name="password" id="password"  placeholder="Enter Password"  >
+            <label for="txtpassword"><b>Password:</b></label>
+            <input type="password" name="txtpassword" id="txtpassword"  placeholder="Enter Password"  >
 
+
+            <!-- <input type="submit" class="login" name="login" value="Login"  > -->
             <button type="submit">Login</button>
             <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+                <!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
             </label>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
-            <span class="txtpassword">Forgot <a href="#">password?</a></span>
+            <!-- <span class="txtpassword">Forgot <a href="#">password?</a></span> -->
             </div>
         </form>
         </div>
@@ -98,13 +103,13 @@
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email" >
         
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" >
         
                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" >
         
                 <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
