@@ -4,7 +4,7 @@
     include_once 'bd.php';
 	
 	//Recuperamos los valores de las cajas de texto y de los demás objetos de formulario
-    $Vclave = trim($_POST["password"]);
+    $Vclave = trim($_POST["txtpassword"]);
 	$Vclave = md5($Vclave);
 	$Vcorreo_usuario = trim($_POST["correo_usuario"]);
 

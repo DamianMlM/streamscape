@@ -21,9 +21,8 @@
 
 </head>
 <body>
-    <main>
     <div class="header">
-                
+        <main>
 			<a href="" class="logo">
                 <span><img src="imagenes/streamscape.png" alt="Logo"></span>Streamscape 
             </a>
@@ -69,7 +68,7 @@
             <!-- <form class="modal-content animate" method="post" onsubmit="return validaLogin()"> -->
             <form class="modal-content animate" method="post" action="php/validacion.php" onsubmit="return validaLogin()">
             <div class="imgcontainer">
-            <img src="imagenes/img_avatar2.png" alt="Avatar" class="avatar">    
+            <img src="imagenes/img_avatar1.png" alt="Avatar" class="avatar">    
             </div>
 
             <div class="container">
