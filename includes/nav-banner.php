@@ -22,9 +22,9 @@
                    <i class="fa fa-caret-down"></i>
                </button>
                <div class="dropdown-container">
-                   <a href="../paginas/alta_tabla1.php">Crear</a>
-                   <a href="../paginas/reporte_general_plataforma.php">Eliminar</a>
-                   <a href="../paginas/reporte_general_plataforma.php">Editar</a>
+                   <a href="../paginas/alta_tabla1.php">Nueva plataforma</a>
+                   <a href="../paginas/reporte_general_plataforma.php">Eliminar una plataforma</a>
+                   <a href="../paginas/reporte_general_plataforma.php">Editar una plataforma</a>
                    <a href="../paginas/reporte_general_plataforma.php">Vista general</a>
                </div>
                <button class="dropdown-btn">Series 
@@ -45,7 +45,7 @@
                    <a href="#">Editar</a>
                    <a href="#">Vista general</a>
                </div>
-               <a href="#contact">Busqueda Personalizada</a>
+               <a href="catalogo_ajax.php">Plataformas y series</a>
                <a href="../index.php">Cerrar sesión</a>
            </div>
        </nav>

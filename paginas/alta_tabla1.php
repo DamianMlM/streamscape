@@ -98,7 +98,7 @@
                     <label for="titulos_plataforma"> Número de titulos: </label>
                     <input type="text" name="titulos_plataforma" id="titulos_plataforma" size="15" maxlength="7">   
                     
-                    <label for="tipo_suscripcion"> Tipo de suscripción</label>
+                    <label for="tipo_suscripcion"> Tipo de suscripción:</label>
                     <select name="tipo_suscripcion" id="tipo_suscripcion">
                         <option value="0">Selecciona si es gratis o de paga</option>
                         <option value="1">Gratis</option>

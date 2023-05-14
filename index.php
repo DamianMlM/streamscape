@@ -65,7 +65,6 @@
             <span onclick="document.getElementById('id01').style.display='none' "class="close" title="Close Modal">&times;</span>
             
             <!-- Modal Content -->
-            <!-- <form class="modal-content animate" method="post" onsubmit="return validaLogin()"> -->
             <form class="modal-content animate" method="post" action="php/validacion.php" onsubmit="return validaLogin()">
             <div class="imgcontainer">
             <img src="imagenes/img_avatar1.png" alt="Avatar" class="avatar">    
