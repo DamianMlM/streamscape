@@ -16,11 +16,9 @@
 	   
     // Ejecutamos la sentencia UPDATE de SQL a partir de la conexión usando PDO 
 	// mediante la propiedad "EXEC" de la linea de conexión ***************************
-	
         $conn->exec($sqlUPDATE);
 	    $mensaje = "PLATAFORMA ACTUALIZADA SATISFACTORIAMENTE";
 
-        
         if ($tipo_suscripcion == "1"){
             $tipo_suscripcion = "Gratis";
         } else if ($tipo_suscripcion == "2"){
@@ -28,7 +26,6 @@
         }else{
             $tipo_suscripcion = "";
         }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,26 +37,18 @@
     <link rel="stylesheet" href="../css/style_general.css">
     <link rel="icon" href="../imagenes/streamscape_icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-        
-
 </head>
 <body>
     <main>
     <?php
          require_once "../includes/nav-banner.php";
     ?>
-
-
-
     <section class="container-intro">
         <div class="container-intro-title">
             <h2 >Informacion de la plataforma actualizada</h2>
         </div>
         
         <div class="container-intro-info">
-        
-
             <label> <?php echo $mensaje ?> </label>
                     
             <label> <strong>  Nombre de la plataforma:  </strong> <?php echo $nombre_plataforma ?></label>
@@ -74,40 +63,13 @@
         <div class="container-button">
             <a href="reporte_general_plataforma.php"><input type="submit" class="botton-login" name="reporte_general" value="Ir al reporte general" /></a> 
         </div>	
-        
     </section>
 
     <?php
          require_once "../includes/pie.php";
     ?>
 </body>
-
-<script>
-     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-    });
-    }                   
-
-
-    const btnMenu = document.getElementById("btn-menu");
-    const containerMenu = document.querySelector(".container-menu");
-    const contMenu = document.querySelector(".cont-menu");
-    // const sideNav = document.querySelector(".sidenav");
-  
-    btnMenu.addEventListener("click", () => {
-      containerMenu.classList.toggle("visible");
-      contMenu.classList.toggle("visible");
-    });
-  </script>
+    <?php
+         include_once "../includes/container-menu.php";
+    ?> 
 </html>

@@ -24,62 +24,14 @@
     <link rel="stylesheet" href="../css/style_general.css">
     <link rel="icon" href="../imagenes/streamscape_icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/valida_alta_plataforma.js"> </script>
     
-        
-
-    <script language="JavaScript" type="text/javascript">
-
-        function validaForm(){
-
-        var nombre_plataforma = document.getElementById("name_plataforma").value;
-
-        var url = document.getElementById("url_plataforma").value;
-
-        var no_titulos = document.getElementById("titulos_plataforma").value;
-
-        var suscripcion = document.getElementById("tipo_suscripcion").selectedIndex;
-
-        if(nombre_plataforma == null || nombre_plataforma.length == 0 || nombre_plataforma == "0" ){
-                alert("Olvidaste poner el nombre de la plataforma");
-                document.getElementById("name_plataforma").style.background="pink";
-                document.getElementById("name_plataforma").focus();
-                return false;
-            }
-        else if(url == null || url.length == 0 || url == "0"){
-                alert("Olvidaste poner el url de la plataforma");
-                document.getElementById("url_plataforma").style.background="pink";
-                document.getElementById("url_plataforma").focus();
-                return false;
-            }   
-            else if(no_titulos == null || no_titulos.length == 0 || !/^([0-9])*$/.test(no_titulos)){
-                alert("Debes escribir la cantidad de titulos que tiene la plataforma (Solo puedes ingresar números)");
-                document.getElementById("titulos_plataforma").value = "";
-                document.getElementById("titulos_plataforma").style.background="pink";
-                document.getElementById("titulos_plataforma").focus();
-            return false;
-            }
-        else if(suscripcion == null || suscripcion.length == 0 || suscripcion == "0")
-            {
-                alert("Olvidaste seleccionar el tipo de suscripcion");
-                document.getElementById("tipo_suscripcion").style.background="pink";
-                document.getElementById("tipo_suscripcion").focus();
-                return false;
-            }   
-        return true;
-        }
-
-
-    </script>
-
-
 </head>
 <body>
     <main>
     <?php
          require_once "../includes/nav-banner.php";
     ?>
-
-
 
     <section class="container-intro">
         <div class="container-intro-title">
@@ -120,33 +72,8 @@
          require_once "../includes/pie.php";
     ?>
 </body>
+    <?php
+         include_once "../includes/container-menu.php";
+    ?>   
 
-<script>
-     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-    });
-    }                   
-
-
-    const btnMenu = document.getElementById("btn-menu");
-    const containerMenu = document.querySelector(".container-menu");
-    const contMenu = document.querySelector(".cont-menu");
-    // const sideNav = document.querySelector(".sidenav");
-  
-    btnMenu.addEventListener("click", () => {
-      containerMenu.classList.toggle("visible");
-      contMenu.classList.toggle("visible");
-    });
-  </script>
 </html>

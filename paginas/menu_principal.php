@@ -1,7 +1,5 @@
 <?php
-
 include_once "../php/proteccion.php";
-   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +18,6 @@ include_once "../php/proteccion.php";
     <?php
          require_once "../includes/nav-banner.php";
     ?>
-
-
-
     <section class="container-intro">
         <div class="container-intro-title">
             <h2 >Menú principal</h2>
@@ -52,33 +47,7 @@ include_once "../php/proteccion.php";
          require_once "../includes/pie.php";
     ?>
 </body>
-
-<script>
-     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-    });
-    }                   
-
-
-    const btnMenu = document.getElementById("btn-menu");
-    const containerMenu = document.querySelector(".container-menu");
-    const contMenu = document.querySelector(".cont-menu");
-    // const sideNav = document.querySelector(".sidenav");
-  
-    btnMenu.addEventListener("click", () => {
-      containerMenu.classList.toggle("visible");
-      contMenu.classList.toggle("visible");
-    });
-  </script>
+    <?php
+         include_once "../includes/container-menu.php";
+    ?>               
 </html>
