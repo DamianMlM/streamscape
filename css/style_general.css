@@ -365,16 +365,16 @@ background-color: #c6c6c6;
 
 /* FORMS RESPONSIVEEEEEEEEEEEEEEEEEEEEEEEEE */
 
-.container-intro input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
+.container-intro input[type=text], select, textarea, input[type=date] {
+  width: 95%;
+  padding: 12px 0px 12px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 
 .container-intro label {
-  padding: 12px 12px 12px 0;
+  padding: 12px 0px 12px 8px;
   display: inline-block;
 }
 
@@ -563,7 +563,7 @@ background-color: #c6c6c6;
     .container-intro {
       text-align: center;
     }
-    .container-intro input[type=text], select, textarea {
+    .container-intro input[type=text], select, textarea, input[type=date]{
       width: 80%;
     }
     

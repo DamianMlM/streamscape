@@ -4,7 +4,7 @@ include_once "../php/proteccion.php";
  // Insertamos el código PHP donde nos conectamos a la base de datos *******************************
  require_once "../php/bd.php";
  // Recuperamos los valores de los objetos de QUERYSTRING que viene desde la URL mediante GET ******
- $plataforma_elegida = $_GET['q'];
+ $plataforma_elegida = $_GET['plataforma'];
 
  // Escribimos la consulta para recuperar el UNICO REGISTRO de MySQL mediante el ID obtenido por _GET
  

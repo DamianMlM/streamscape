@@ -45,8 +45,7 @@ if (empty($rows)) {
                     <div>
                         <label for="ComboPlataforma">Plataforma:</label>
                         
-                        <select name="ComboPlataforma" id="ComboPlataforma" 
-                        onChange="showSeries(this.value);">
+                        <select name="ComboPlataforma" id="ComboPlataforma" onChange="showSeries(this.value);">
                         
                         <option value="0">-- Selecciona una plataforma --</option>
                             <?php 

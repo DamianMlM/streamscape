@@ -51,7 +51,7 @@
     
     <section class="container-intro">
         <div class="container-intro-title">
-            <h2 >Reporte de las plataformas</h2>
+            <h2 >Reporte para editar plataformas</h2>
         </div>
 
 
@@ -62,7 +62,6 @@
                     <th>Nombre</th>
                     <th>Cant. Titulos</th>
                     <th>Tipo de suscripcion</th>
-                    <th class="sin-borde" ></th>
                     <th class="sin-borde" ></th>
                 </tr>
                 
@@ -75,13 +74,7 @@
                 <td><?php echo $row['total_titulos']; ?></td>
                 <td><?php echo $row['tipo_suscripcion']; ?>    </td>
                 
-                <td class="sin-borde" ><a onClick="return borrar_plataforma(<?php echo $row['id_plataforma']; ?>);" 
-           			href="eliminar_plataforma.php?id_plataforma=<?php echo $row['id_plataforma']; ?>">
-                       <button class="boton-eliminar">
-                           Eliminar
-                        </button>
-                    </a>
-                </td>
+                
                 
                 <td class="sin-borde"><a href="editar_plataforma.php?idPlataforma=<?php echo $row['id_plataforma']; ?>">
                     <button class="boton-actualizar">

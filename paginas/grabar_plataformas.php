@@ -64,7 +64,7 @@
         <div class="container-intro-info">
         
 
-            <label> <?php echo $mensaje ?> </label>
+            <label> <?php echo $mensaje ?> </label> 
                     
             <label> <strong>  Nombre de la plataforma:  </strong> <?php echo $nombre_plataforma ?></label>
             <!-- <label> <strong> URL de la plataforma:</strong> <?php echo $url_plataforma?></label> -->
