@@ -1,6 +1,7 @@
 <?php
         //Insertamos el código PHP donde nos conectamos a la base de datos *******************************
         include_once "../php/proteccion.php";
+        
         include_once '../php/bd.php';
         $result;
         

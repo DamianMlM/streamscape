@@ -1,0 +1,16 @@
+
+URL:
+http://marmird.atspace.cc/streamscape/
+
+
+USUARIOS
+
+Tipo: Administrador
+Usuario: veganet@gmail.com
+Contraseña: veganet123%
+Este usuario puede realizar el CRUD de la tabla usuarios
+
+Tipo: General
+Usuario: vegatapia@gmail.com
+Contraseña: vegatapia123%
+Este usuario no puede ver usuarios

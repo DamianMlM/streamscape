@@ -1,5 +1,6 @@
 <?php
-include_once "../php/proteccion.php";
+include_once "../php/proteccion_usuarios.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,18 +30,42 @@ include_once "../php/proteccion.php";
                 Aqui podras encontrar enlaces directos a las diferentes opciones:
             </p>
         </div>
+         
+        <div class="colm">
 
-        <div class="container-intro-menu-button">
-            <div class="dropdown">
-                <button class="dropbtn">Plataformas</button>
-                <div class="dropdown-content">
-                <a href="./reporte_general_plataforma.php">Consultar</a>
-                <a href="./alta_tabla1.php">Nueva Plataforma</a>
-                <a href="./reporte_general_plataforma.php">Editar plataforma</a>
-                <a href="./reporte_general_plataforma.php">Eliminar plataforma</a>
-                </div>
-            </div>
+            <div class="columns">
+                <ul class="price">
+                    <li class="header">PLATAFORMAS</li>
+                    <li class="grey"><a href="reporte_general_plataforma.php">Visualizar Plataformas</a></li>
+                    <li><a href="alta_tabla1.php">Nueva Plataforma</a></li>
+                <li><a href="reporte_editar_plataforma.php">Editar Plataforma</a></li>
+                <li><a href="reporte_eliminar_plataforma.php">Eliminar Plataforma</a></li>
+            </ul>
         </div>
+
+        <div class="columns">
+            <ul class="price">
+                <li class="header" style="background-color: #005d81">SERIES</li>
+                <li class="grey"><a href="reporte_general_series.php">Visualizar Series</a></li>
+                <li><a href="alta_serie.php">Nueva Serie</a></li>
+                <li><a href="reporte_editar_series.php">Editar Serie</a></li>
+                <li><a href="reporte_eliminar_series.php">Eliminar Serie</a></li>
+            </ul>
+        </div>
+        
+        <div class="columns">
+            <ul class="price">
+                <li class="header">USUARIOS</li>
+                <li class="grey"><a href="reporte_general_usuarios.php">Visualizar Usuarios</a></li>
+                <li><a href="alta_usuario.php">Nuevo Usuario</a></li>
+                <li><a href="reporte_editar_usuarios.php">Editar Usuario</a></li>
+                <li><a href="reporte_eliminar_usuarios.php">Eliminar Usuario</a></li>
+            </ul>
+        </div>
+    </div>
+        
+
+
     </section>
 
     <?php

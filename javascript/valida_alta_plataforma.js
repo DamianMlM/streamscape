@@ -1,5 +1,5 @@
 
-function validaForm(){
+function validaFormPlataforma(){
 
     var nombre_plataforma = document.getElementById("name_plataforma").value;
 

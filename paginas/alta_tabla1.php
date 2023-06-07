@@ -39,7 +39,7 @@
         </div>
         
         <div class="container-intro-info">
-             <form action="grabar_plataformas.php" method="post" id="formulario_plataforma"  onsubmit="return validaForm()"  >
+             <form action="grabar_plataformas.php" method="post" id="formulario_plataforma"  onsubmit="return validaFormPlataforma()"  >
                 <div>
                     <label for="name_plataforma">Nombre de la plataforma:</label>
                     <input type="text" name="name_plataforma" id="name_plataforma" size="40" maxlength="50">

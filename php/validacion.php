@@ -21,9 +21,14 @@
 	
 	if ($cuantos > 0) 
 	{
-	   //En caso de haber encontrado al usuario, le creamos una variable de SESION para su ingreso
-	   $_SESSION["validado"]="true";
-	    
+        foreach ($rows as $row) {
+			$tipo_usuario = $row['tipousuario'];
+            $usuario = $row['usuario'];
+		}
+		//En caso de haber encontrado al usuario, le creamos una variable de SESION para su ingreso
+		$_SESSION["validado"]="true";
+		$_SESSION["tipo_usuario"]= $tipo_usuario;
+		$_SESSION["usuario_sesion"]= $usuario;
 	   //Redireccionamos a una de las páginas del sistema en linea
        header("Location: ../paginas/menu_principal.php");
 	   $conn = null;

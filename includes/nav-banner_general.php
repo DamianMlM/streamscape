@@ -13,11 +13,11 @@
    <!-- <a href="">Recomendaciones</a> -->
 </div>
 </div>
-
 <div class="container-menu">
    <div class="cont-menu" >
        <nav>
            <div class="sidenav">
+              
                <button class="dropdown-btn">Plataformas 
                    <i class="fa fa-caret-down"></i>
                </button>
@@ -36,15 +36,7 @@
                    <a href="../paginas/reporte_editar_series.php">Editar serie</a>
                    <a href="../paginas/reporte_general_series.php">Ver series</a>
                </div>
-               <button class="dropdown-btn">Usuarios 
-                   <i class="fa fa-caret-down"></i>
-               </button>
-               <div class="dropdown-container">
-               <a href="../paginas/alta_usuario.php">Nuevo usuario</a>
-                   <a href="../paginas/reporte_eliminar_usuarios.php">Eliminar usuario</a>
-                   <a href="../paginas/reporte_editar_usuarios.php">Editar usuario</a>
-                   <a href="../paginas/reporte_general_usuarios.php">Ver usuarios</a>
-               </div>
+              
                <a href="catalogo_ajax.php">Plataformas y series</a>
                <a href="../index.php">Cerrar sesión</a>
            </div>

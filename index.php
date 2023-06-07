@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="imagenes/streamscape_icono.png" type="image/x-icon">
     <script src="javascript/valida_login.js"></script>
+    <script src="javascript/valida_singup.js"></script>
 
 </head>
 <body>
@@ -57,7 +58,7 @@
             <!-- Button to open the modal login form -->
                 <button class="botton-login" onclick="document.getElementById('id01').style.display='block'">Iniciar Sesión</button>
             <!-- Button to open the modal login form -->
-                <!-- <button class="botton-login" onclick="document.getElementById('id02').style.display='block'">Registrarse</button> -->
+                <button class="botton-login" onclick="document.getElementById('id02').style.display='block'">Registrarse</button>
         </div>
         
         <!-- The Modal -->
@@ -69,6 +70,8 @@
             <div class="imgcontainer">
             <img src="imagenes/img_avatar1.png" alt="Avatar" class="avatar">    
             </div>
+     
+
 
             <div class="container">
             <label for="correo_usuario"><b>Correo:</b></label>
@@ -95,22 +98,36 @@
                 <!-- The Modal (contains the Sign Up form) -->
         <div id="id02" class="modal">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="/action_page.php">
+            <form class="modal-content" method="post" action="paginas/grabar_usuario_singup.php" onsubmit="return validaFormUsuarioSingUp()">
             <div class="container">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
+                <h1>Crear cuenta</h1>
+                <p>Por favor llena el formulario para crear tu cuenta.</p>
                 <hr>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" >
-        
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" >
-        
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" >
-        
+
+                <label for="name_user">Usuario:</label>
+                <input type="text" name="name_user" id="name_user" size="40" maxlength="50">
+
+                <label for="correo_user"> Correo:</label>
+                <input type="text" name="correo_user" id="correo_user" size="45" maxlength="100">   
+                    
+                <label for="clave_user"> Contraseña: </label>
+                <input type="password" name="clave_user" id="clave_user" size="15" maxlength="50"> 
+                    <!-- An element to toggle between password visibility -->
+                <label for="showpass"> Mostrar contraseña: </label>
+                <input type="checkbox" id="showpass" onclick="myFunction()"><br><br>
+
+
+                <label for="repeat">Repetir contraseña</label>
+                <input type="password" placeholder="Repeat Password" name="repeat" id="repeat" >
+
+                <label for="showpass1"> Mostrar contraseña: </label>
+                <input type="checkbox" id="showpass1" onclick="myFunction1()"><br><br>
+
+                
+            
+
                 <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                <!-- <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me -->
                 </label>
         
                 <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>

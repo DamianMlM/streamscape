@@ -363,16 +363,80 @@ tr:hover{
 background-color: #c6c6c6;
 }
 
+
+
+.colm {
+  display: flex;
+}
+.columns {
+  margin-top: 30px;
+  padding: 8px;
+  flex: 1;
+}
+
+.columns a {
+ text-decoration: none;
+ color: black;
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+/* CARDS MENUUUUUUUUUUUUUU */
+/* .colm{
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    } 
+}
+
+
+
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+
+
+   */
 /* FORMS RESPONSIVEEEEEEEEEEEEEEEEEEEEEEEEE */
 
-.container-intro input[type=text], select, textarea, input[type=date] {
+.container-intro input[type=text], select, textarea, input[type=date], input[type=password] {
   width: 95%;
   padding: 12px 0px 12px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
-
+.container-intro input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+  padding-top: 0px;
+}
 .container-intro label {
   padding: 12px 0px 12px 8px;
   display: inline-block;
@@ -471,6 +535,54 @@ background-color: #c6c6c6;
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #274661;}
 
+
+
+
+/* CONTACTOOOOOOOOOOOOOOOO */
+.contact{
+  margin-top: 100px;
+}
+.contact .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.contact .title {
+  text-align: center;
+  color: grey;
+  font-size: 18px;
+}
+.card a {
+  /* text-align: left; */
+  color: grey;
+  font-size: 15px;
+}
+
+.contact button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.contact button:hover, a:hover {
+  opacity: 0.7;
+}
 /* BOTONES */
 .botton-login {
     /* padding: 10px 10px 10px 10px; */
@@ -563,12 +675,38 @@ background-color: #c6c6c6;
     .container-intro {
       text-align: center;
     }
-    .container-intro input[type=text], select, textarea, input[type=date]{
+    .container-intro input[type=text], select, textarea, input[type=date],input[type=password] {
       width: 80%;
     }
+    /* .container-intro input[type=checkbox]{
+      width: 100%;
+    } */
     
     .container-intro label {
       width: 80%;
      text-align: left;
+    }
+    .colm {
+      display:block;
+    }
+    .columns {
+      margin-top: 30px;
+      padding: 8px;
+    }
+    .columns {
+      width: 100%;
+      
+        float: left;
+        /* width: 33.3%; */
+        padding: 8px;
+      
+    } 
+    .contact a{
+     max-width: 80%;
+    }
+    .card a {
+      text-align: left;
+      color: grey;
+      font-size: 16px;
     }
   }
